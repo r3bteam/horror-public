@@ -5,7 +5,11 @@ const dateFormat = require('dateformat');
 const fs = require('fs');
 const moment = require('moment');
 
+client.on('ready', async () => {
+    console.log('I am ready!');
 
+    client.user.setPresence({ game: { name: 'Horror Magasin', type: 2 } });
+});
 
 
  
